@@ -48,9 +48,7 @@ const Chat = () => {
             <ChatHeader channelName={channelName} />
 
             <div className="chat__messages">
-                {messages.map((message) => {
-                    console.log(message)
-                })}
+              
                 {messages.map(message => (
                     <Message message={message.message} timestamp={message.timestamp} user={message.user} />
                 ))}
